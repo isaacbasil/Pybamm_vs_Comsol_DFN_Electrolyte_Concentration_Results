@@ -1,0 +1,55 @@
+# define parameter values for the simulation
+
+parameter_values['Thermodynamic factor'] = 1.0
+parameter_values['Ambient temperature [K]'] = 298.15
+parameter_values['Cation transference number'] = 0.4
+parameter_values['Cell volume [m3]'] = 9.734e-14
+parameter_values['Current function [A]'] = 1.36479E-08 # for 1c discharge
+#parameter_values['Current function [A]'] = 2.729579E-08  # for 2c discharge
+parameter_values['Electrode height [m]'] = 3.14E-05
+parameter_values['Electrode width [m]'] = 3.10E-05
+parameter_values['Electrolyte conductivity [S.m-1]'] = 1
+parameter_values['Electrolyte diffusivity [m2.s-1]'] = 1e-10
+parameter_values['Initial concentration in electrolyte [mol.m-3]'] = 1000.0
+parameter_values['Initial concentration in negative electrode [mol.m-3]'] = 25000
+parameter_values['Initial concentration in positive electrode [mol.m-3]'] = 25000
+parameter_values['Initial temperature [K]'] = 298.15
+parameter_values['Maximum concentration in negative electrode [mol.m-3]'] = 26000
+parameter_values['Maximum concentration in positive electrode [mol.m-3]'] = 50400
+parameter_values['Negative current collector conductivity [S.m-1]'] = 3700
+parameter_values['Negative current collector thickness [m]'] = 10e-6
+parameter_values['Negative electrode Bruggeman coefficient (electrode)'] = 4.094783335
+parameter_values['Negative electrode Bruggeman coefficient (electrolyte)'] = 3.066954629
+parameter_values['Negative electrode active material volume fraction'] = 0.5384
+parameter_values['Negative electrode charge transfer coefficient'] = 0.5
+parameter_values['Negative electrode conductivity [S.m-1]'] = 100
+parameter_values['Negative electrode diffusivity [m2.s-1]'] = 3e-14
+parameter_values['Negative electrode porosity'] = 0.4616
+parameter_values['Negative electrode thickness [m]'] = 40e-6
+parameter_values['Negative particle radius [m]'] = 1.08e-06
+parameter_values['Number of cells connected in series to make a battery'] = 1.0
+parameter_values['Number of electrodes connected in parallel to make a cell'] = 1.0
+parameter_values['Positive current collector conductivity [S.m-1]'] = 3700
+parameter_values['Positive current collector thickness [m]'] = 10e-6
+parameter_values['Positive electrode Bruggeman coefficient (electrode)'] = 2.838998685
+parameter_values['Positive electrode Bruggeman coefficient (electrolyte)'] = 1.960626282
+parameter_values['Positive electrode active material volume fraction'] = 0.4937
+parameter_values['Positive electrode charge transfer coefficient'] = 0.5
+parameter_values['Positive electrode conductivity [S.m-1]'] = 2.8
+parameter_values['Positive electrode diffusivity [m2.s-1]'] = 4e-14
+parameter_values['Positive electrode porosity'] = 0.5063
+parameter_values['Positive electrode thickness [m]'] = 40e-6
+parameter_values['Positive particle radius [m]'] = 4.07e-06
+parameter_values['Reference temperature [K]'] = 298.15
+parameter_values['Separator Bruggeman coefficient (electrolyte)'] = 1.9
+parameter_values['Separator porosity'] = 0.4
+parameter_values['Separator thickness [m]'] = 20e-6
+
+# define number of points in each section of the mesh
+var_pts = {
+    "x_n": 40,  # negative electrode
+    "x_s": 20,  # separator
+    "x_p": 40,  # positive electrode
+    "r_n": 10,  # negative particle
+    "r_p": 10,  # positive particle
+}
